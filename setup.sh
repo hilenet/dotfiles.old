@@ -1,11 +1,11 @@
 # link dotfiles/.* files to $HOME/.*
 
 # except refs name
-except=("." ".." ".git" "gitignore")
+except=(".git" "gitignore")
 
 path=$(cd $(dirname $0);pwd)
 
-for f in $HOME/dotfiles/.* ;  do
+for f in $HOME/dotfiles/.??* ;  do
   flag=0
   filename=${f#$path\/}
 
@@ -20,6 +20,7 @@ for f in $HOME/dotfiles/.* ;  do
     continue
   fi
 
-  echo "ln -s $f $HOME/$filename"
-  ln -s $f $HOME/$filename
+  cmd="ln -snf $f $HOME/$filename"
+  echo $cmd
+  $cmd
 done
