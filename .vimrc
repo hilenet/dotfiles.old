@@ -8,7 +8,7 @@ set cursorline
 set ruler
 set showmatch 
 set laststatus=2
-"colorscheme koehler
+colorscheme koehler
 
 set pumheight=10  " complemention
 
@@ -35,6 +35,8 @@ set backspace=indent,eol,start
 nnoremap j gj
 nnoremap k gk
 nnoremap Y y$     " yank to endline
+nnoremap <Space>b <C-b>
+nnoremap <Space>f <C-f>
 
 " search
 set ignorecase

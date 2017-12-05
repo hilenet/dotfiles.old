@@ -1,7 +1,7 @@
 # link dotfiles/.* files to $HOME/.*
 
 # except refs name
-except=(".git" "gitignore")
+except=(".git" ".gitignore" ".DS_Store")
 
 path=$(cd $(dirname $0);pwd)
 
