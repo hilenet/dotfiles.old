@@ -1,3 +1,9 @@
 [user]
 	name = Hilenet
-	email =illogical.j@gmail.com
+	email = illogical.j@gmail.com
+[alias]
+  st = status
+[core]
+  # 日本語コミットの文字コード化を防げ
+  quotepath = false
+  editor = vim
